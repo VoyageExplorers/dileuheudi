@@ -5,7 +5,7 @@ body {
 }
 
 header {
-  display: flex;
+  display: inline-flex;
   justify-content: space-between;
   align-items: center;
   background-color: rgba(75, 15, 15, 0.2); /* Transparent background */
@@ -13,8 +13,7 @@ header {
   border-bottom: 1px solid white; /* White border */
   position: fixed;
   width: 100%;
-  top: 0;
-  z-index: 1;
+  z-index: 2;
 }
 
 header .logo img {
@@ -184,7 +183,7 @@ header nav ul li a:hover {
 }
 
 .form {
-  background-color: #808080; /* Gray background to match the image */
+  background-color: #4b0707; /* Mật tông background to match the image */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -275,12 +274,12 @@ footer .social-links ul {
 
 footer .social-links footer li img {
   /*fix kích thước ảnh*/
-  height: 42px;
+  height: 10px;
 }
 
 footer .social-links-fixed li img {
   /*fix kích thước ảnh*/
-  height: 42px;
+  height: 10px;
 }
 
 footer .bottom {
@@ -301,7 +300,7 @@ footer .bottom hr {
   flex-direction: column;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 70px) {
   footer .bottom .bottom-content {
     flex-direction: column;
   }
