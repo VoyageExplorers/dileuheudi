@@ -8,11 +8,16 @@
 
 /*Mobile*/
 @media (max-width: 740px) {
-  header {
-    display: block;
+  header .nav-pc {
+    display: none;
   }
 
-  header nav {
-    display: none;
+  .nav_bar-btn {
+    display: block;
+    color: #fff;
+  }
+
+  .nav-moblie-close {
+    display: block;
   }
 }

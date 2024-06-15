@@ -1,3 +1,8 @@
+<script
+  src="https://kit.fontawesome.com/978917ea9c.js"
+  crossorigin="anonymous"
+></script>;
+
 document.addEventListener("DOMContentLoaded", function () {
   const destinations = document.querySelectorAll(".destination");
   const container = document.querySelector(".destinations-container");

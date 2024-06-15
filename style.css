@@ -16,15 +16,20 @@ header {
   z-index: 2;
 }
 
+li {
+  list-style-type: none;
+}
+
 header .logo img {
   height: 60px;
 }
 
-header nav {
+/*nav pc*/
+header .nav-pc {
   margin: 0 auto;
 }
 
-header nav ul {
+header .nav-pc-list {
   align-items: center;
   list-style: none;
   display: flex;
@@ -33,11 +38,11 @@ header nav ul {
   border-radius: 50px;
 }
 
-header nav ul li {
+header .nav-pc .nav-pc-list li {
   margin-left: 20px;
 }
 
-header nav ul li a {
+header .nav-pc .nav-pc-list li .nav-pc-link {
   color: #fff;
   text-decoration: none;
   font-size: 17px;
@@ -47,9 +52,64 @@ header nav ul li a {
   transition: background-color 0.3s, color 0.3s;
 }
 
+/*đổi màu khi đưa chuột vào nav-bars*/
 header nav ul li a:hover {
   background-color: #fff;
   color: black;
+}
+
+/*----nav moblie ------*/
+.nav-mobile-list {
+  display: block;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 320px;
+  max-width: 100%;
+  background-color: #fff;
+  transform: translateX(100%);
+  list-style: none;
+}
+
+.nav-moblie-close {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+}
+
+.nav-moblie-link {
+  display: block;
+  text-decoration: none;
+  color: #333;
+  transform: translateX(100%);
+  list-style: none;
+}
+
+/*overlay*/
+.nav__overlay {
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: none;
+}
+
+.nav__input:checked ~ .nav__overlay {
+  display: block;
+}
+
+.nav__input:checked ~ .nav-mobile {
+  transform: translateX(100%);
+}
+
+/*nút nav-bars trên moblie*/
+.nav_bar-btn {
+  width: 2em;
+  height: 2em;
+  display: none;
 }
 
 .img-fluid {
